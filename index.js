@@ -1,5 +1,4 @@
-module.exports = (req, res) {
-
+module.exports = (req, res) => {
     import { createServer } from "cors-anywhere";
     // Listen on a specific host via the HOST environment variable
     var host = process.env.HOST || "0.0.0.0";
@@ -13,7 +12,6 @@ module.exports = (req, res) {
         console.log("Running CORS Anywhere on " + host + ":" + port);
     });
     res.send({
-        name : "hoan",
-    })
-}
-
+        name: "hoan",
+    });
+};
