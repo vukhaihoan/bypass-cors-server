@@ -1,7 +1,13 @@
 {
-    "functions": {
-        "api/hello.js": {
-            "includeFiles": "_files/**"
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "access-control-allow-origin",
+                    "value": "*"
+                }
+            ]
         }
-    }
+    ]
 }
